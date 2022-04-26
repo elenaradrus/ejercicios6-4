@@ -16,14 +16,16 @@ const preguntaContraseña = prompt("Dime tu contraseña")
 }*/
 
 do {
-    if (preguntaUsuario === usuario && preguntaContraseña === contraseña) {
-      alert("Bienvenido");
-      comprobar = 3;
-    } else {
-      const preguntaUsuario = prompt("Dime tu usuario");
-      const preguntaContraseña = prompt("Dime tu contraseña");
-      comprobar++
-    }
-  } while (comprobar < 3) {
-      alert("la cagaste burlan caster");
-  };
+  if (preguntaUsuario === usuario && preguntaContraseña === contraseña) {
+    alert("Bienvenido");
+    comprobar = 3;
+    break;
+  } else {
+    alert('Datos incorrectos');
+    const preguntaUsuario = prompt("Dime tu usuario");
+    const preguntaContraseña = prompt("Dime tu contraseña");
+    comprobar++
+  }
+} while (comprobar < 3) {
+    alert('En 15 minutos podrás volver a loguearte');
+};

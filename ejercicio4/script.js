@@ -3,37 +3,24 @@
 
 const usuario = "usuario1";
 const contraseña = "abcd";
+const comprobar = 1;
 
 const preguntaUsuario = prompt("Dime tu usuario")
 const preguntaContraseña = prompt("Dime tu contraseña")
 
-while (preguntaUsuario === usuario && preguntaContraseña === contraseña) {
+/*while (preguntaUsuario === usuario && preguntaContraseña === contraseña) {
     alert("Bienvenido"); {break;}
-}
+}*/
 
-/*var usuario = "usuario1";
-var contraseña = "abcd";
-
-var preguntaUsuario = prompt("Dime tu usuario")
-var preguntaContraseña = prompt("Dime tu contraseña")
-
-var comprobar = 0*/
-
-/*while (comprobar <= 3) {
-    if( preguntaUsuario === usuario && preguntaContraseña === contraseña) {
-        alert('Bienvenido')
+do {
+    if (preguntaUsuario === usuario && preguntaContraseña === contraseña) {
+      alert("Bienvenido");
+      comprobar = 3;
     } else {
-        comprobar++
+      const preguntaUsuario = prompt("Dime tu usuario");
+      const preguntaContraseña = prompt("Dime tu contraseña");
+      comprobar++
     }
-    }
-
-    do {
-        if(comprobar <= 3){
-            var preguntaUsuario = prompt("Dime tu usuario")
-            var preguntaContraseña = prompt("Dime tu contraseña")
-            comprobar++
-        } else {
-            alert('hack')
-            break
-        }
-    } while (preguntaUsuario === usuario && preguntaContraseña === contraseña);  */
+  } while (comprobar < 4) {
+      alert("la cagaste burlan caster")
+  };

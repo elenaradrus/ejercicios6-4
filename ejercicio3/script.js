@@ -1,4 +1,7 @@
 //3. Suma o resta (según elija el usuario) dos números reales
+//SI fueran iguales los numeros, pedirle al usuario el nombre y devolverle la cantidad de 
+//letras que tiene su nombre.
+
 
 var primero = prompt("Dime el primer número");
 primero = parseInt(primero)
@@ -16,4 +19,9 @@ if (operacion === "sumar") {
     alert("El resultado es " + restar);
   } else {
     alert("No me trolees");
+}
+
+if (primero === segundo) {
+  const nombre = prompt("Escribe tu nombre");
+  alert(nombre.length);
 }

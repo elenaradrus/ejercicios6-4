@@ -21,6 +21,6 @@ do {
       const preguntaContraseña = prompt("Dime tu contraseña");
       comprobar++
     }
-  } while (comprobar < 4) {
-      alert("la cagaste burlan caster")
+  } while (comprobar < 3) {
+      alert("la cagaste burlan caster");
   };
